@@ -1,0 +1,16 @@
+<div class="row">
+  <span> Year Picker Picker 1</span>
+  <div>
+    <NgY-YearPicker [yearModel]="model1" (yearModelChange)="onChangeDoSomething1()"></NgY-YearPicker>
+    selected : {{model1}}
+  </div>
+</div>
+
+<div class="row">
+  <span> Yea Picker Picker 1</span>
+  <div>
+    <NgY-YearPicker [yearModel]="model2" (yearModelChange)="onChangeDoSomething2()" [isQuarterYear]="true">
+    </NgY-YearPicker>
+    selected : {{model2}}
+  </div>
+</div>
