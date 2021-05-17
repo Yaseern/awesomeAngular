@@ -9,6 +9,7 @@ export class YearPickerExampleComponent implements OnInit {
 
   model1;
   model2;
+  currentYear = new Date().getFullYear();
   constructor() { }
 
   ngOnInit() {
