@@ -1,0 +1,24 @@
+<div class="row">
+  <span> Choose Year</span>
+  <div>
+    <ngy-year-picker [(ngModel)]="model1" (change)="onChangeDoSomething1()"></ngy-year-picker>
+    selected : {{model1}}
+  </div>
+</div>
+
+<div class="row">
+  <span> Current Year</span>
+  <div>
+    <ngy-year-picker [(ngModel)]="currentYear" id="model3"></ngy-year-picker>
+    selected : {{currentYear}}
+  </div>
+</div>
+
+<div class="row">
+  <span> Choose Financial Year</span>
+  <div>
+    <ngy-year-picker [(ngModel)]="model2" (yearModelChange)="onChangeDoSomething2()" [isQuarterYear]="true">
+    </ngy-year-picker>
+    selected : {{model2}}
+  </div>
+</div>
